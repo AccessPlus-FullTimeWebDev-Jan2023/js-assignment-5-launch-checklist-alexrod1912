@@ -32,8 +32,8 @@ window.addEventListener("load", function() {
         } 
          if(pilotNameVal !== "Not a Number" || 
             copilotNameVal !== "Not a Number" || 
-            fuelLevelVal !== "Number" ||
-            cargoMassVal !== "Number"){
+            fuelLevelVal !== "Is a Number" ||
+            cargoMassVal !== "Is a Number"){
                 console.log(pilotNameVal, copilotNameVal, fuelLevelVal, cargoMassVal)
                 alert("Please put in valid inputs ")
                 event.preventDefault();
@@ -71,7 +71,7 @@ window.addEventListener("load", function() {
 
         }
         if (fuelLevelInput.value > 10000 && cargoMass.value < 10000){
-            faultyItems.style.visibility = "visible"
+            faultyItems.style.visibility = "hidden"
             launchStatus.innerHTML = `Shuttle ready for launch`
             launchStatus.style.color = 'green'
 

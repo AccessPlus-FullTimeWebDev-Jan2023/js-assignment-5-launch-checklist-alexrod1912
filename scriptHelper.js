@@ -27,7 +27,7 @@ function validateInput(testInput) {
    } else if ( isNaN(parseInt(testInput))){
     return ("Not a Number")
     } else {
-        return ("Number")  
+        return ("Is a Number")  
     }
 }
 
