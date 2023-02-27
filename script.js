@@ -30,8 +30,8 @@ window.addEventListener("load", function() {
             event.preventDefault();
 
         } 
-         if(pilotNameVal !== "Not a number" || 
-            copilotNameVal !== "Not a number" || 
+         if(pilotNameVal !== "Not a Number" || 
+            copilotNameVal !== "Not a Number" || 
             fuelLevelVal !== "Number" ||
             cargoMassVal !== "Number"){
                 console.log(pilotNameVal, copilotNameVal, fuelLevelVal, cargoMassVal)
